@@ -22,13 +22,8 @@ print(secret*G)
 
 
 ```python
-from ecc import PrivateKey, Signature, S256Point
+from ecc import PrivateKey, Signature, G, N
 from random import randint
-
-N = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141
-G = S256Point(
-    0x79be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798,
-    0x483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8)
         
 class PrivateKey(PrivateKey):
     
